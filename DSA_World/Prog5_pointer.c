@@ -8,6 +8,7 @@ int main()
 {
     int *p;
     p=(int *)malloc(5*sizeof(int));
+    // p= new int[5];
     
     p[0]=10;
     p[1]=15;
