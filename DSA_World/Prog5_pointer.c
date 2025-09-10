@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
     int *p;
-    p=(int *)malloc(5*sizeof(int));
+    p=(int *)malloc(5*sizeof(int)); // allocating memory in c language
     // p= new int[5];
     
     p[0]=10;
@@ -21,5 +21,6 @@ int main()
     {
         printf("%d\n",p[i]);
     }
-    
+    delete [] p; // releasing the memory
+    //free(p); releasing memory in C language
 }
