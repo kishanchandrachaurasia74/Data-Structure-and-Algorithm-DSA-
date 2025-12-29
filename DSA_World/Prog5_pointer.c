@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
     int *p;
-    p=(int *)malloc(5*sizeof(int)); // allocating memory in c language
+    p=(int *)malloc(5*sizeof(int)); // allocating memory in heap c language
     // p= new int[5];
     
     p[0]=10;
