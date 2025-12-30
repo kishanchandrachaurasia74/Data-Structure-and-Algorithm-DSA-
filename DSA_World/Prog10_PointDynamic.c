@@ -12,7 +12,8 @@ int main()
 {
    
     struct Rectangle *p;
-    p=(struct Rectangle*) malloc(sizeof(struct Rectangle));
+    p=(struct Rectangle*) malloc(sizeof(struct Rectangle)); // in C
+ /* p=new rectangle                        in C++*/   
     
     p->length=10;
     p->breadth=5;
