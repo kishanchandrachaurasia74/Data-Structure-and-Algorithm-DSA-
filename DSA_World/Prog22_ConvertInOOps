@@ -1,0 +1,96 @@
+// Object Oriented Proogramming
+
+#include<iostream>
+#include<stdio.h>
+#include<conio.h>
+using namespace std;
+
+class Rectangle
+{
+public:
+    int length;
+    int breadth;
+
+void intialize (int l, int b)
+{
+    length=l;
+    breadth=b;
+}
+
+int area()
+{
+    return length*breadth;
+}
+
+int peremeter()
+{
+    int p;
+    p=2*(length+breadth);
+    return p;
+}
+};
+int main()
+{
+   Rectangle r={0,0};
+    
+    int l,b;
+    printf("enter  the length and breadth");
+    cin>>l>>b;
+    
+    r.intialize(l,b);
+    
+    int a=r.area();
+    int peri=r.peremeter();
+    
+    printf("Area is %d\nperimeter is %d",a,peri);
+    
+    return 0;
+}
+/* the above program is conversion of struct to OPs using using class
+
+
+#include<iostream>
+#include<stdio.h>
+#include<conio.h>
+using namespace std;
+
+struct Rectangle
+{
+    int length;
+    int breadth;
+
+void intialize (int l, int b)
+{
+    length=l;
+    breadth=b;
+}
+
+int area()
+{
+    return length*breadth;
+}
+
+int peremeter()
+{
+    int p;
+    p=2*(length+breadth);
+    return p;
+}
+};
+int main()
+{
+   Rectangle r={0,0};
+    
+    int l,b;
+    printf("enter  the length and breadth");
+    cin>>l>>b;
+    
+    r.intialize(l,b);
+    
+    int a=r.area();
+    int peri=r.peremeter();
+    
+    printf("Area is %d\nperimeter is %d",a,peri);
+    
+    return 0;
+} */
